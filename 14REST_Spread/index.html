@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores REST and Spread</title>
+</head>
+<body>
+
+    <h1>Operadores Rest and Spread</h1>
+
+    <script>
+
+        // OPERADOR REST *
+        function sumar(a, b, ...c){
+
+            let result = a + b;
+
+            c.forEach(function(n){
+                result += n;
+            })
+
+            return result;
+
+        }
+
+        console.log(sumar(2,2));
+        console.log(sumar(2,2,2)); // mandando otro parámetro adicional
+        console.log(sumar(2,2,2,4)); // mandando mas de un parametro adicional
+
+        // *********************************
+        console.log("************************");
+
+
+        // OPERADOR SPREAD
+
+        const num1 = [1,2,3,4,5];
+        const num2 = [6,7,8,9,0];
+
+        const numeros = [...num1, ...num2];
+
+        console.log(numeros);
+
+        // ----------------------------------
+
+    </script>
+    
+</body>
+</html>

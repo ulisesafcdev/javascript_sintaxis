@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Operadores</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tipos de Operadores</h1>
+
+    <script>
+
+        // operadores basicos
+        let a = 12 + 8; // suma
+        console.log(a);
+        let b = 12 - 8; // resta
+        console.log(b);
+        let c = 8 * 4; // multiplicacion
+        console.log(c);
+        let d = 30 / 6; // division
+        console.log(d);
+        let e = 25 % 3; // modulo, regresa el residuo
+        console.log(e);
+
+        /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+        console.log("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+
+        console.log(7 == 7); // compara solamente el valor, mas no el tipo de dato
+        console.log("7" == 7);
+
+        console.log(7 === 7); // compara el valor + el tipo de dato
+        // podemos ver que en efecto ambos valores son 7, pero un valor es String y el otro es Number
+        console.log("7" === 7); // por lo tanto es false
+
+        // esa es la diferencia entre '==' & '==='
+
+        /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        console.log("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+
+        // el signo '!' intercambia el valor
+        console.log(!true);
+        console.log(!false);
+        
+        console.log("hola" !== "ola"); // hace referencia a: diferente de
+        console.log(1 !== 0);
+
+
+    </script>
+    
+</body>
+</html>

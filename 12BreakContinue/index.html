@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break y Continue</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Break y Continue</h1>
+
+    <script>
+
+
+        let numeros = [1,2,3,4,5,6,7,8,9,0];
+
+        for (let i = 0; i < numeros.length; i++) {
+            // const element = numeros[i];
+            // console.log(element);
+
+            // console.log(mod);
+            if (numeros[i] % 2 !== 0) {
+                continue;
+            }
+            console.log(`${i} : ${numeros[i]}`);
+        }
+
+
+    </script>
+    
+</body>
+</html>

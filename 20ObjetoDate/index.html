@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Objeto Date en JavaScript</h1>
+
+    <script>
+
+        console.log(Date());
+
+        let fecha = new Date();
+        console.log(fecha);
+        console.log(`Fecha dia de ahora: ${fecha.getDate()}`); 
+        console.log(`Numero de dia: ${fecha.getDay()}`);
+        console.log(`Año: ${fecha.getFullYear()}`);
+        console.log(`Hora Formato 12Hrs: ${fecha.getHours()}`);
+        console.log(`Milisegundos: ${fecha.getMilliseconds()}`);
+        console.log(`Minutos: ${fecha.getMinutes()}`);
+        console.log(`Numero de mes: ${fecha.getMonth()}`);
+        console.log(`Segundos: ${fecha.getSeconds()}`);
+        console.log(`Devuelve los milisegundos transcurridos desde 1 de enero de 1970: ${fecha.getTime()}`);
+        console.log(`Devuelve la diferencia entre GMT y la hora local: ${fecha.getTimezoneOffset()}`);
+
+        console.log("+++++++++++++++ UTC ++++++++++++++");
+
+        console.log(`Devuelve el mes en numero: ${fecha.getUTCDate()}`);
+        console.log(`Devuelve el dia de la semana: ${fecha.getUTCDay()}`);
+        console.log(`Devuelve el año: ${fecha.getUTCFullYear()}`);
+        console.log(`${fecha.getUTCHours()}`);
+        console.log(`${fecha.getUTCMilliseconds()}`);
+        console.log(`${fecha.getUTCMinutes()}`);
+        console.log(`${fecha.getUTCMonth()}`);
+        console.log(`${fecha.getUTCSeconds()}`);
+
+        console.log("++++++++++++++++++++++++++++++++++");
+
+        console.log(`${fecha.toDateString()}`);
+        console.log(`${fecha.toISOString()}`);
+        console.log(`${fecha.toJSON()}`);
+        console.log(`${fecha.toLocaleDateString()}`);
+        console.log(`${fecha.toLocaleString()}`);
+        console.log(`${fecha.toLocaleTimeString()}`);
+        console.log(`${fecha.toString()}`);
+        console.log(`${fecha.toTimeString()}`);
+        console.log(`${fecha.toUTCString()}`);
+
+    </script>
+    
+</body>
+</html>
